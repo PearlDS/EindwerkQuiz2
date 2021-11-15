@@ -1,6 +1,6 @@
 
 <!doctype html>
-                        <html>
+                        <html lang="en" xmlns:th="http://www.thymeleaf.org">
                             <head>
                                 <meta charset='utf-8'>
                                 <meta name='viewport' content='width=device-width, initial-scale=1'>
@@ -49,13 +49,14 @@
 }</style>
                                 </head>
                                 <body oncontextmenu='return false' class='snippet-body'>
-                                <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top"> <a href="#" class="navbar-brand">BRANDNAME</a> <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks"> <span class="navbar-toggler-icon"></span> </button>
+                                <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top"> <a href="#" class="navbar-brand">Quiz Game</a> <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks"> <span class="navbar-toggler-icon"></span> </button>
     <div class="collapse navbar-collapse" id="navLinks">
         <ul class="navbar-nav">
             <li class="nav-item"> <a href="" class="nav-link">HOME</a> </li>
-            <li class="nav-item"> <a href="" class="nav-link">ABOUT</a> </li>
-            <li class="nav-item"> <a href="" class="nav-link">SERVICES</a> </li>
-            <li class="nav-item"> <a href="" class="nav-link">CONTACTS</a> </li>
+            <li class="nav-item"> <a href="" class="nav-link">Make Quiz</a> </li>
+            <li class="nav-item"> <a href="" class="nav-link">Join Quiz</a> </li>
+            <li class="nav-item"> <a href="" class="nav-link">Play Quiz</a> </li>
+            </ul>
     </div>
 </nav>
 <header>
@@ -67,7 +68,7 @@
         </ol>
         <div class="carousel-inner" role="listbox">
             <!-- Slide One - Set the background image for this slide in the line below -->
-            <div class="carousel-item active" style="background-image: url('https://github.com/FlorianKeisse/EindwerkQuiz/blob/main/src/main/resources/templates/NormalQuiz.jpg?raw=true')">
+            <div class="carousel-item active" style="background-image: url('https://github.com/FlorianKeisse/EindwerkQuiz/blob/main/src/main/resources/templates/RandomQuiz.png?raw=true')">
                 <div class="carousel-caption d-none d-md-block">
                     <h3 class="display-4">Create A Game!</h3>
                     <p class="lead">Create your own game with your own questions! And see if your friends can guess them!</p>
@@ -79,7 +80,7 @@
                     <p class="lead">Take on a Game not for the weak against your friends</p>
                 </div>
             </div> <!-- Slide Three - Set the background image for this slide in the line below -->
-            <div class="carousel-item" style="background-image: url('https://github.com/FlorianKeisse/EindwerkQuiz/blob/main/src/main/resources/templates/NormalQuiz.jpg?raw=true')">
+            <div class="carousel-item" style="background-image: url('https://github.com/FlorianKeisse/EindwerkQuiz/blob/main/src/main/resources/templates/Quiz3.jpg?raw=true')">
                 <div class="carousel-caption d-none d-md-block">
                     <h3 class="display-4">Normal Quiz Game!</h3>
                     <p class="lead">Have some fun with a normal Quiz against friends!</p>
@@ -91,9 +92,10 @@
 <!-- Page Content -->
 <section class="py-5">
     <div class="container">
-        <h1 class="font-weight-light">Image Slider Two</h1>
-        <p class="lead">Here you can write anything about the website. These are the sample pictures ,replace them and use your own. These pictures are taken from unsplash.</p>
-        <p class="lead">Bacon ipsum dolor amet drumstick short loin ribeye sirloin ham spare ribs landjaeger, pig turducken meatball sausage. Salami cow shoulder pork loin. Meatloaf turducken andouille chuck beef ribs picanha. Filet mignon pastrami fatback ribeye leberkas shank boudin sirloin beef short ribs tail pig pork loin shoulder buffalo. Short ribs andouille swine chicken leberkas. Fatback sirloin pork belly turkey landjaeger corned beef biltong, buffalo bresaola strip steak brisket short loin salami.</p>
+        <h1 class="font-weight-light">Play a Quiz together with friends!</h1>
+        <p class="lead">Invite your friends and make your own quiz or challenge them with an existing one.</p>
+        <p class="lead">This is a project for school in which i create an Online Quiz to challenge your friends, it features a drinking game as well so we can have some safe fun while Corona is roaming around.</p>
+        <p>Please note that drinking should always be done with consideration and shouldn't be over consumed.</p>
     </div>
 </section>
 <script>
