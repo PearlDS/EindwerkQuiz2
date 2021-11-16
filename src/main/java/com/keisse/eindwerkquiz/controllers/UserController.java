@@ -4,10 +4,7 @@ import com.keisse.eindwerkquiz.services.UserService;
 import com.keisse.eindwerkquiz.models.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -22,12 +19,22 @@ public class UserController {
         this.userService = userService;
     }
 
-    @RequestMapping("/")
-    public String viewHomePage(Model model) {
-        List<User> users = userService.findAll();
-        model.addAttribute("users", users);
-        return "index";
+    @GetMapping("login")
+    public String goToLoginPage(Model model) {
+    model.addAttribute("user",new User("",""));
+        return "login";
     }
+
+    @PostMapping("login2")
+    public String redirectToLoginPage(@ModelAttribute("user") User userReceived){
+        System.out.println(userReceived.getUserName());
+        System.out.println(userReceived.getPassword());
+
+        System.out.println("You have been redirected");
+        return "test";
+    }
+
+    @PostMapping
 
     @RequestMapping("/new")
     public String newUser(Model model) {
