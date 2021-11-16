@@ -1,4 +1,4 @@
-package com.keisse.eindwerkquiz.user;
+package com.keisse.eindwerkquiz.models;
 
 import lombok.*;
 

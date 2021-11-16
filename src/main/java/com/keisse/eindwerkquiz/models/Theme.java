@@ -1,4 +1,4 @@
-package com.keisse.eindwerkquiz.quizquestions;
+package com.keisse.eindwerkquiz.models;
 
 import lombok.ToString;
 

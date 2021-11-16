@@ -1,6 +1,6 @@
 package com.keisse.eindwerkquiz.services;
 
-import com.keisse.eindwerkquiz.quizquestions.Theme;
+import com.keisse.eindwerkquiz.models.Theme;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

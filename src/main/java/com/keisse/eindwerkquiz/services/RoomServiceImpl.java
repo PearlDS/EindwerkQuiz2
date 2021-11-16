@@ -1,23 +1,26 @@
 package com.keisse.eindwerkquiz.services;
 
-import com.keisse.eindwerkquiz.models.UserScore;
+import com.keisse.eindwerkquiz.models.Room;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+
 @Service
-public class UserScoreServiceImpl implements  UserScoreService{
+public class RoomServiceImpl implements RoomService{
+
+
     @Override
-    public List<UserScore> findAll() {
+    public List<Room> findAll() {
         return null;
     }
 
     @Override
-    public void save(UserScore userScore) {
+    public void save(Room room) {
 
     }
 
     @Override
-    public UserScore findById(Long id) {
+    public Room findById(Long id) {
         return null;
     }
 

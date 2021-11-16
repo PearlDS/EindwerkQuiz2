@@ -1,7 +1,6 @@
 package com.keisse.eindwerkquiz.services;
 
-import com.keisse.eindwerkquiz.quizquestions.Theme;
-import com.keisse.eindwerkquiz.user.User;
+import com.keisse.eindwerkquiz.models.Theme;
 
 import java.util.List;
 

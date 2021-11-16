@@ -1,10 +1,8 @@
 package com.keisse.eindwerkquiz.controllers;
 
 
-import com.keisse.eindwerkquiz.quizquestions.Theme;
+import com.keisse.eindwerkquiz.models.Theme;
 import com.keisse.eindwerkquiz.services.ThemeService;
-import com.keisse.eindwerkquiz.services.UserService;
-import com.keisse.eindwerkquiz.user.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -13,6 +11,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
+
+//todo: controller mapping
 
 @Controller
 public class ThemeController {

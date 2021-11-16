@@ -1,7 +1,6 @@
 package com.keisse.eindwerkquiz.services;
 
-import com.keisse.eindwerkquiz.user.User;
-import com.keisse.eindwerkquiz.user.UserScore;
+import com.keisse.eindwerkquiz.models.UserScore;
 
 import java.util.List;
 

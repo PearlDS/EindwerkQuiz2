@@ -1,12 +1,12 @@
 package com.keisse.eindwerkquiz.services;
 
-import com.keisse.eindwerkquiz.quizquestions.QuizQuestion;
+import com.keisse.eindwerkquiz.models.QuizQuestion;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
-public class QuizQuestionServiceimpl implements QuizQuestionService{
+public class QuizQuestionServiceImpl implements QuizQuestionService{
     @Override
     public List<QuizQuestion> findAll() {
         return null;
