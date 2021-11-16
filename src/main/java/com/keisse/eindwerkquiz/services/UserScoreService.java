@@ -3,6 +3,7 @@ package com.keisse.eindwerkquiz.services;
 import com.keisse.eindwerkquiz.models.UserScore;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface UserScoreService {
 
@@ -10,7 +11,7 @@ public interface UserScoreService {
 
     void save(UserScore userScore);
 
-    UserScore findById(Long id);
+    Optional<UserScore> findById(Long id);
 
     void deleteById(Long id);
 }

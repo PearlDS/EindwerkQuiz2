@@ -3,6 +3,7 @@ package com.keisse.eindwerkquiz.services;
 import com.keisse.eindwerkquiz.models.Room;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface RoomService {
 
@@ -10,7 +11,7 @@ public interface RoomService {
 
     void save(Room room);
 
-    Room findById(Long id);
+    Optional<Room> findById(Long id);
 
     void deleteById(Long id);
 }

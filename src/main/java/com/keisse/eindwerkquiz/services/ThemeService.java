@@ -3,6 +3,7 @@ package com.keisse.eindwerkquiz.services;
 import com.keisse.eindwerkquiz.models.Theme;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface ThemeService {
 
@@ -10,7 +11,7 @@ public interface ThemeService {
 
     void save(Theme theme);
 
-    Theme findById(Long id);
+    Optional<Theme> findById(Long id);
 
     void deleteById(Long id);
 }
