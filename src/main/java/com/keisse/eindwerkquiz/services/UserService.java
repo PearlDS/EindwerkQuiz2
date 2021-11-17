@@ -14,4 +14,7 @@ public interface UserService {
     Optional<User> findById(Long id);
 
     void deleteById(Long id);
+
+    User getUserByUserNameAndPassword(String userName, String passWord);
+
 }

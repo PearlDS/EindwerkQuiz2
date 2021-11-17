@@ -18,47 +18,27 @@
     background-size: cover
 }
 
-#mainNavbar {
-    padding-left: 50px;
-    padding-top: 20px
-}
-
-.navbar-dark .navbar-brand {
-    font-family: 'Source Serif Pro', serif
-}
-
-.navbar-nav .nav-link {
-    font-family: 'Source Serif Pro', serif
-}
-
-.display-4 {
-    font-family: 'Source Serif Pro', serif
-}
-
-.lead {
-    font-family: 'Source Serif Pro', serif
-}
-
-.navbar.scrolled {
-    background: rgb(34, 31, 31);
-    transition: background 500ms
-}
+                                .nav li {
+                                    display:inline-block;
+                                }
 
 .font-weight-light {
     font-family: 'Source Serif Pro', serif
 }</style>
                                 </head>
-                                <body oncontextmenu='return false' class='snippet-body'>
-                                <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top"> <a href="#" class="navbar-brand">Quiz Game</a> <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks"> <span class="navbar-toggler-icon"></span> </button>
-    <div class="collapse navbar-collapse" id="navLinks">
-        <ul class="navbar-nav">
-            <li class="nav-item"> <a href="" class="nav-link">HOME</a> </li>
-            <li class="nav-item"> <a href="" class="nav-link">Make Quiz</a> </li>
-            <li class="nav-item"> <a href="JoinRedirect.html" class="nav-link">Join Quiz</a> </li>
-            <li class="nav-item"> <a href="" class="nav-link">Play Quiz</a> </li>
-            </ul>
-    </div>
-</nav>
+                            <!--Navigation bar-->
+                            <div id="nav-placeholder">
+
+                            </div>
+
+                            <script>
+                                $(function(){
+                                    $("#nav-placeholder").load("LoggedOutNavBar.html");
+                                });
+                            </script>
+                            <!--end of Navigation bar-->
+                            <body oncontextmenu='return false' class='snippet-body'>
+
 <header>
     <div id="indicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -99,12 +79,7 @@
     </div>
 </section>
 <script>
-    $(function() {
-        $(document).scroll(function() {
-            var $nav = $("#mainNavbar");
-            $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
-        });
-    });
+
 </script>
                                 <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js'></script>
                                 <script type='text/javascript'></script>
