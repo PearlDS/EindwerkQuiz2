@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head >
-	<title>Sign-up Page</title>
+	<title>Login Page</title>
    <!--Made with love by Mutiullah Samim -->
    
 	<!--Bootsrap 4 CDN-->
@@ -18,7 +18,7 @@
 	<div class="d-flex justify-content-center h-100">
 		<div class="card">
 			<div class="card-header">
-				<h3>Sign Up</h3>
+				<h3>Login Here</h3>
 				<div class="d-flex justify-content-end social_icon">
 					<span><i class="fab fa-facebook-square"></i></span>
 					<span><i class="fab fa-google-plus-square"></i></span>
@@ -38,7 +38,7 @@
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-key"></i></span>
 						</div>
-						<input type="password" class="form-control" placeholder="password" th:field = "${user.passWord}">
+						<input type="password" class="form-control" placeholder="password" th:field = "${user.password}">
 					</div>
 					<div class="row align-items-center remember">
 						<input type="checkbox">Remember Me
@@ -50,9 +50,8 @@
 			</div>
 			<div class="card-footer">
 				<div class="d-flex justify-content-center links">
-					Already have an account?<a href="http://localhost:63342/EindwerkQuiz/templates/login.html?_ijt=39v4mvhmkpbeldbukv661ku483&_ij_reload=RELOAD_ON_SAVE">Login</a>
+					Don't have an account?<a href="http://localhost:63342/EindwerkQuiz/templates/signUp.html?_ijt=39v4mvhmkpbeldbukv661ku483&_ij_reload=RELOAD_ON_SAVE">Sign Up</a>
 				</div>
-
 			</div>
 		</div>
 	</div>
